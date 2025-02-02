@@ -30,9 +30,9 @@ info=getinfo(name)
 if info:
     for q in question_list:
         try:
-            print(f"{name}'s {q} is {info[q]}")
+            print(f"{name.capitalize()}'s {q} is {info[q]}")
         except Exception:
-            print(f"I am unable to find {name}'s '{q}' ")
+            print(f"I am unable to find {name.capitalize()}'s '{q}' ")
 
 
 
